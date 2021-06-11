@@ -1,0 +1,29 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Simple, pleasant chess clock for computers, tablets, and phones">
+    <meta name="keywords" content="chess clock, phone, mobile">
+    <meta name="author" content="Sam Summer">
+    <meta property="og:image" content="./favicon.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="500">
+    <meta property="og:image:height" content="500">
+    <title>Chess Clock</title>
+    <link rel="shortcut icon" href="./favicon.ico">
+    <link rel="stylesheet" href="./chess-clock.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+    <script src="./chess-clock.js"></script>
+</head>
+
+<body>
+    <div id="app-wrapper">
+        <div class="timer" id="t1">
+            <span id="t1M">20</span><span id="t1Colon">:</span><span id="t1S">00</span>
+        </div>
+        <div class="timer" id="t2">
+            <span id="t2M">20</span><span id="t2Colon">:</span><span id="t2S">00</span>
+        </div>
+        <button onclick="switchTurn()" id="switch-button">START</button>
+    </div>
+</body>

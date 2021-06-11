@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Space Mono', monospace;
+}
+
+html {
+    background: #000;
+    color: #fff;
+}
+
+body {
+    margin: 0;
+}
+
+#app-wrapper {
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+    grid-template-rows: 50vh 50vh;
+}
+
+.timer {
+    font-size: 12vw;
+    line-height: 12vh;
+    padding-top: 18vh;
+    text-align: center;
+}
+
+#t1 {
+    border-right: 1px solid #fff;
+}
+
+#t2 {
+    border-left: 1px solid #fff;
+    color: #666;
+}
+
+#switch-button {
+    background: #6f00ff;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 8vw;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    letter-spacing: 1vw;
+}
+
+#switch-button:active {
+    background: #4600a1;
+}
+
+#switch-button:focus-visible {
+    border: none;
+    outline: none;
+    text-decoration: underline;
+}
