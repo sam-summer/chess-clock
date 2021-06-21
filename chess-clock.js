@@ -153,8 +153,6 @@ function showSettings() {
 function cancelSettings() {
     var targetMin = Math.floor(duration / 60);
     var targetSec = duration % 60;
-    console.log(targetMin)
-    console.log(targetSec)
     document.getElementById("min").value = targetMin;
     document.getElementById("sec").value = targetSec;
     hideSettings();
