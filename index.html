@@ -17,6 +17,20 @@
 </head>
 
 <body>
+    <div id="settings-wrapper">
+        <h1>Settings</h1>
+        <p>Each player has:</p>
+        <input id="min" type="number" min="0" max="720" value="20" /> <span class="right-margin">minutes</span>
+        <input id="sec" type="number" min="0" max="59" value="0" /> <span>seconds</span><br>
+        <hr>
+        <button class="primary" onclick="setClock()">SET CLOCK</button>
+        <button class="secondary" onclick="cancelSettings()">CANCEL</button>
+    </div>
+    <div id="small-btn-wrapper">
+        <button onclick="showSettings()" class="small-btn" id="settings-btn">SETTINGS</button>
+        <button onclick="togglePause()" class="small-btn" id="pause-btn">PAUSE</button>
+        <button onclick="resetClock()" class="small-btn" id="reset-btn">RESET</button>
+    </div>
     <div id="app-wrapper">
         <div class="timer" id="t1">
             <span id="t1M">20</span><span id="t1Colon">:</span><span id="t1S">00</span>
@@ -24,6 +38,6 @@
         <div class="timer" id="t2">
             <span id="t2M">20</span><span id="t2Colon">:</span><span id="t2S">00</span>
         </div>
-        <button onclick="switchTurn()" id="switch-button">START</button>
+        <button onclick="handleClick()" id="switch-btn">START</button>
     </div>
 </body>
